@@ -1,0 +1,57 @@
+form fieldset{
+    text-align: start;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    margin: 0;
+    padding: 0 4px;
+    border-radius: 4px;
+    margin-inline: 0px;
+}
+form fieldset span{
+    pointer-events: none;
+    user-select: none;
+    left: 14px;
+    color: #7E7E7E;
+    font-size: 12px;
+    position: absolute;
+    bottom: -20px;
+}
+form fieldset legend{
+    color: #7E7E7E;
+    height: 0;
+    display: none;
+    margin-left: 12px;
+    pointer-events: none;;
+}
+form input{
+    overflow: visible;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 14px 12px;
+    background: none;
+    outline: none;
+}
+form input:focus::placeholder{
+    position: absolute;
+    color: #7E7E7E;
+}
+form input:valid + legend, form input:focus + legend, form input:invalid + legend{
+    display: block;
+    transform: translateY(-11px);
+    -webkit-transform: translateY(-11px);
+    -moz-transform: translateY(-11px);
+    -ms-transform: translateY(-11px);
+    -o-transform: translateY(-11px);
+}
+
+form input:placeholder-shown + legend{
+    display: none;
+}
+form input:invalid + legend{
+    color: var(--error);
+}

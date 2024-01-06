@@ -1,0 +1,38 @@
+#form{min-height: 0px; color: black; gap: 50px; margin-bottom: 100px;}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 380px;
+    max-width: 100%;
+}
+.error{
+    border-color: var(--error) !important;
+    border-width: 2px !important;
+}
+
+form input
+form ul legend{
+    font-size: 16px;
+}
+form ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 13.5px;
+    text-align: start;
+}
+form ul label{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:12px;
+}
+form ul label input{
+    cursor:pointer;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}

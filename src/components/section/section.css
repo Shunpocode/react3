@@ -1,0 +1,42 @@
+section{
+
+    width: 100%;
+    max-width: var(--max-width);
+    box-sizing: border-box;
+    min-height: var(--section-height);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 32px;
+    margin-bottom: 140px;
+
+}
+section div{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:21px;
+}
+#cards{
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 29px;
+    margin-bottom: 18px;
+}
+section div > h1{width: 380px; max-width: 100%;}
+section div > p{width: 380px; max-width: 100%;}
+.bg{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("bg.png");
+}
+@media (max-width: 1200px) {
+    #cards{
+        justify-content: center;
+    }
+}

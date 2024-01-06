@@ -1,0 +1,31 @@
+button{
+    min-width: 100px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0px 18px 0px 19px;
+    font-size: 16px;
+    color: #000000DE;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+    border: none;
+    cursor: pointer;
+}
+.yellow{background-color: rgba(244 224 65);}
+.yellow:hover{
+    background-color: #FFE302;
+}
+.none{
+    pointer-events: none;
+    opacity: 0;
+}
+.disabled{
+    pointer-events: none;
+    background: #B4B4B4;
+    color: rgba(255, 255, 255, 0.87);
+}
