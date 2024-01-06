@@ -21,7 +21,6 @@
 .full-email{
     bottom: -10;
     position: absolute;
-    background: red;
     border-radius: 4px;
     background: rgba(0, 0, 0, 0.87);
     display: inline-flex;
