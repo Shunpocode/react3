@@ -3,7 +3,7 @@ import "./card.css";
 
 export default function Card({ avatar, name, position, email, phone }) {
   const [isHovered, setHovered] = useState(false);
-  const visibleCharsThreshold = 25; // Порог для определения видимости текста
+  const visibleCharsThreshold = 25;
 
   return (
     <span className={`card ${isHovered ? "hovered" : ""}`}>

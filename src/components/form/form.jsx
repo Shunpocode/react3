@@ -63,7 +63,7 @@ export default function Form({ type }) {
     setIntervalId(newIntervalId);
 
     return () => {
-      clearInterval(newIntervalId); // Очистка интервала при размонтировании компонента
+      clearInterval(newIntervalId); 
     };
   }, [position_id, sentForm]);
 

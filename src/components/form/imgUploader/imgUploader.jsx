@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import "./imgUploader.css"
 
 const ImageUploader = () => {
-  const [imagePreview, setImagePreview] = useState(null);
   const [imgSrc, setImgSrc] = useState('');
   const [invalidImg, setInvalidImg] = useState(false);
 
@@ -40,7 +39,6 @@ const ImageUploader = () => {
 
       reader.readAsDataURL(file);
     } else {
-      setImagePreview(null);
       setImgSrc('');
     }
   };
