@@ -33,7 +33,7 @@ section div > p{width: 380px; max-width: 100%;}
 .bg{
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("bg.png");
+    background-image: url("bg.webp");
 }
 @media (max-width: 1200px) {
     #cards{
