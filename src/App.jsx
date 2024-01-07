@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 import Header from "./components/header/header";
-import {Section, Cards} from "./components/section/section";
+import Section from "./components/section/section";
+import Cards from "./components/section/cards/cards";
 import Form from "./components/form/form";
 
 export default function App() {

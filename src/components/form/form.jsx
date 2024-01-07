@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './form.css';
 import ImageUploader from './imgUploader/imgUploader';
 import Fieldset from './fieldset/fieldset';
-import Position from './position';
+import Position from './position/position';
 import { API_TOKEN } from './api/api';
 import Button from '../button/button';
 

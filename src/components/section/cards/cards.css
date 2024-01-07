@@ -1,0 +1,13 @@
+#cards{
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 29px;
+    margin-bottom: 18px;
+}
+@media (max-width: 1200px) {
+    #cards{
+        justify-content: center;
+    }
+}

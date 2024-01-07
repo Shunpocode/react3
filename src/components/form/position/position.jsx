@@ -1,4 +1,5 @@
 import {useState, useEffect} from "react";
+import './position.css'
 
 export default function Position({testRadio}) {
 
