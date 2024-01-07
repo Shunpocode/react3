@@ -14,27 +14,24 @@ export default function Cards({ type }) {
 
     useEffect(() => {
       setPreloader(true);
-      setTimeout(() => {
-        fetch(`https://frontend-test-assignment-api.abz.agency/api/v1/users?page=${page}&count=6`)
-        .then((response) => response.json())
-        .then(data => {
-          setPreloader(false);
-          setCurrentUsers(data.total_users);
-          setMaxPage(data.total_pages);
-          if (page === 1) {
-            setUsers(data.users);
-          } else if (page > 1) {
-            setUsers((prevUsers) => [...prevUsers, ...data.users]);
-          }
-          if (page >= data.total_pages) {
-            setApiButton('disabled');
-          }
-        })
-        .catch(error => {
-          console.error('Ошибка при получении данных о пользователях:', error);
-        });
-
-      }, 1000);
+      fetch(`https://frontend-test-assignment-api.abz.agency/api/v1/users?page=${page}&count=6`)
+      .then((response) => response.json())
+      .then(data => {
+        setPreloader(false);
+        setCurrentUsers(data.total_users);
+        setMaxPage(data.total_pages);
+        if (page === 1) {
+          setUsers(data.users);
+        } else if (page > 1) {
+          setUsers((prevUsers) => [...prevUsers, ...data.users]);
+        }
+        if (page >= data.total_pages) {
+          setApiButton('disabled');
+        }
+      })
+      .catch(error => {
+        console.error('Ошибка при получении данных о пользователях:', error);
+      });
     }, [page]);
 
     useEffect(() => {
