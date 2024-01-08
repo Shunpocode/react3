@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/react3/static/css/main.4c0bcf95.css",
-    "main.js": "/react3/static/js/main.f1cb7d23.js",
+    "main.css": "/react3/static/css/main.1933e574.css",
+    "main.js": "/react3/static/js/main.e6b58dbf.js",
+    "static/media/Nunito-VariableFont_wght.ttf": "/react3/static/media/Nunito-VariableFont_wght.c0f0807a40aebdc41b40.ttf",
     "static/media/bg.webp": "/react3/static/media/bg.758de38492e7b4e0358e.webp",
+    "static/media/registred.svg": "/react3/static/media/registred.75501c0e8626de1c97c1a1da9b8590f2.svg",
     "index.html": "/react3/index.html",
-    "main.4c0bcf95.css.map": "/react3/static/css/main.4c0bcf95.css.map",
-    "main.f1cb7d23.js.map": "/react3/static/js/main.f1cb7d23.js.map"
+    "main.1933e574.css.map": "/react3/static/css/main.1933e574.css.map",
+    "main.e6b58dbf.js.map": "/react3/static/js/main.e6b58dbf.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c0bcf95.css",
-    "static/js/main.f1cb7d23.js"
+    "static/css/main.1933e574.css",
+    "static/js/main.e6b58dbf.js"
   ]
 }
