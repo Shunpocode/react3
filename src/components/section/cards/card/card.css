@@ -19,6 +19,8 @@
     justify-content: center;
 }
 .full-email{
+    max-width: 100%;
+    text-wrap: wrap !important;
     bottom: -10;
     position: absolute;
     border-radius: 4px;
