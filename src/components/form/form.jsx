@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState, lazy } from 'react';
 import './form.css';
 import ImageUploader from './imgUploader/imgUploader';
-import Fieldset from './fieldset/fieldset';
+// import Fieldset from './fieldset/fieldset';
 import Position from './position/position';
 import { API_TOKEN } from './api/api';
 import Button from '../button/button';
 import RegistredSvg from "./registred.svg";
+const Fieldset = lazy(() => import('./fieldset/fieldset'));
 
 export default function Form({ type }) {
   const [sentForm, setSentForm] = useState(false);

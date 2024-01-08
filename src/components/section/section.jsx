@@ -1,10 +1,11 @@
 import "./section.css";
 import Button from '../button/button';
 
-export default function Section({type, bg}){
+export default function Section({type}){
 
+    
     return(
-        <section className={type + ' ' + bg}>
+        <section className={type + ' bg'}>
             <div>
                 <h1>
                     Test assignment for front-end developer

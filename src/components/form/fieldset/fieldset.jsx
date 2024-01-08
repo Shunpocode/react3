@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./fieldset.css";
 
-export default function Fieldset(params) {
+export default function Fieldset() {
 
     const [inputValues, setInputValues] = useState({
         name: '',
