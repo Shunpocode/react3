@@ -1,4 +1,4 @@
-import React from 'react';
+import {useState} from 'react';
 import './App.css';
 import Header from "./components/header/header";
 import Section from "./components/section/section";
@@ -7,8 +7,8 @@ import Form from "./components/form/form";
 
 export default function App() {
 
-  let [device, deviceSize] = React.useState('');
-  let [deviceCard, deviceCardFunc] = React.useState('');
+  let [device, deviceSize] = useState('');
+  let [deviceCard, deviceCardFunc] = useState('');
   setInterval(() => {
     if (window.innerWidth >= 1024) {
       deviceSize(device = 'desktop');
