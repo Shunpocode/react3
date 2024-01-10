@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact3=self.webpackChunkreact3||[]).push([[292],{292:(e,t,s)=>{s.r(t),s.d(t,{default:()=>i});s(791);var a=s(184);const c=s(234),i=()=>(0,a.jsx)("img",{src:c,alt:"",style:{width:"fit-content",height:"100%",position:"absolute",zIndex:"0"}})},234:(e,t,s)=>{e.exports=s.p+"static/media/bg.758de38492e7b4e0358e.webp"}}]);
+//# sourceMappingURL=292.6b8d9415.chunk.js.map

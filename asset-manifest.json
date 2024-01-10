@@ -1,28 +1,26 @@
 {
   "files": {
-    "main.css": "/react3/static/css/main.3f4eac01.css",
-    "main.js": "/react3/static/js/main.0a74d2de.js",
-    "static/css/96.bff24779.chunk.css": "/react3/static/css/96.bff24779.chunk.css",
-    "static/js/96.3706b827.chunk.js": "/react3/static/js/96.3706b827.chunk.js",
+    "main.css": "/react3/static/css/main.fda9845e.css",
+    "main.js": "/react3/static/js/main.fe759120.js",
     "static/css/675.9a0592e5.chunk.css": "/react3/static/css/675.9a0592e5.chunk.css",
-    "static/js/675.dcf91740.chunk.js": "/react3/static/js/675.dcf91740.chunk.js",
+    "static/js/675.ef70fe19.chunk.js": "/react3/static/js/675.ef70fe19.chunk.js",
+    "static/js/292.6b8d9415.chunk.js": "/react3/static/js/292.6b8d9415.chunk.js",
     "static/css/865.4dddf3ee.chunk.css": "/react3/static/css/865.4dddf3ee.chunk.css",
     "static/js/865.5860a578.chunk.js": "/react3/static/js/865.5860a578.chunk.js",
     "static/media/Nunito-VariableFont_wght.ttf": "/react3/static/media/Nunito-VariableFont_wght.c0f0807a40aebdc41b40.ttf",
     "static/media/bg.webp": "/react3/static/media/bg.758de38492e7b4e0358e.webp",
     "static/media/registred.svg": "/react3/static/media/registred.75501c0e8626de1c97c1a1da9b8590f2.svg",
     "index.html": "/react3/index.html",
-    "main.3f4eac01.css.map": "/react3/static/css/main.3f4eac01.css.map",
-    "main.0a74d2de.js.map": "/react3/static/js/main.0a74d2de.js.map",
-    "96.bff24779.chunk.css.map": "/react3/static/css/96.bff24779.chunk.css.map",
-    "96.3706b827.chunk.js.map": "/react3/static/js/96.3706b827.chunk.js.map",
+    "main.fda9845e.css.map": "/react3/static/css/main.fda9845e.css.map",
+    "main.fe759120.js.map": "/react3/static/js/main.fe759120.js.map",
     "675.9a0592e5.chunk.css.map": "/react3/static/css/675.9a0592e5.chunk.css.map",
-    "675.dcf91740.chunk.js.map": "/react3/static/js/675.dcf91740.chunk.js.map",
+    "675.ef70fe19.chunk.js.map": "/react3/static/js/675.ef70fe19.chunk.js.map",
+    "292.6b8d9415.chunk.js.map": "/react3/static/js/292.6b8d9415.chunk.js.map",
     "865.4dddf3ee.chunk.css.map": "/react3/static/css/865.4dddf3ee.chunk.css.map",
     "865.5860a578.chunk.js.map": "/react3/static/js/865.5860a578.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f4eac01.css",
-    "static/js/main.0a74d2de.js"
+    "static/css/main.fda9845e.css",
+    "static/js/main.fe759120.js"
   ]
 }
