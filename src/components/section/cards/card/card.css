@@ -41,8 +41,10 @@
     -moz-transform: scale(.81);
     -ms-transform: scale(.81);
     -o-transform: scale(.81);
+    pointer-events: none;
 }
 .hovering:hover .full-email{
+  pointer-events: all;
     opacity: 1;
     transform: scale(1);
     -webkit-transform: scale(1);
