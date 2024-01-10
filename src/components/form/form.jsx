@@ -58,7 +58,7 @@ export default function Form({ type }) {
         }else{
           isFormValid = false
         }
-      });
+      }); 
       setFormOK(isFormValid);
     }
   }
