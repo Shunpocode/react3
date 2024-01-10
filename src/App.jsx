@@ -1,29 +1,23 @@
-import { lazy, useEffect, useState, memo } from 'react';
+import {lazy, useEffect, useState} from 'react';
 import './App.css';
 import Header from "./components/header/header";
-
-const Section = lazy(() => import('./components/section/section'));
-const Form = lazy(() => import('./components/form/form'));
+import Section from './components/section/section';
 const Cards = lazy(() => import('./components/section/cards/cards'));
-
-const MemoHeader = memo(Header);
-const MemoSection = memo(Section);
-const MemoForm = memo(Form);
-const MemoCards = memo(Cards);
+const Form = lazy(() => import('./components/form/form'));
 
 export default function App() {
-  const [isDesktop, setDesktop] = useState(() => window.innerWidth >= 1024);
-  const [isLaptop, setLaptop] = useState(() => window.innerWidth <= 1023);
-  const [isMobile, setMobile] = useState(() => window.innerWidth <= 425);
+  const [isDesktop, setDesktop] = useState(false);
+  const [isLaptop, setLaptop] = useState(false);
+  const [isMobile, setMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
+
       setDesktop(width >= 1024);
-      setLaptop(width <= 1023);
+      setLaptop(width <= 1023 && width >425);
       setMobile(width <= 425);
     };
-
     handleResize();
 
     window.addEventListener('resize', handleResize);
@@ -35,10 +29,10 @@ export default function App() {
 
   return (
     <>
-      <MemoHeader type={isDesktop ? 'desktop' : (isLaptop ? 'laptop' : (isMobile ? 'mobile' : ''))} />
-      <MemoSection type={isDesktop ? 'desktop' : (isLaptop ? 'laptop' : (isMobile ? 'mobile' : ''))} />
-      <MemoCards type={isLaptop ? 'laptop' : (isMobile ? 'mobile' : '')} />
-      <MemoForm type={isDesktop ? 'desktop' : (isLaptop ? 'laptop' : (isMobile ? 'mobile' : ''))} />
+      <Header type={isDesktop ? 'desktop' : '' || isLaptop ? 'laptop':'' || isMobile ? 'mobile':''} />
+      <Section type={isDesktop ? 'desktop' : '' || isLaptop ? 'laptop':'' || isMobile ? 'mobile':''} />
+      <Cards type={ isLaptop ? 'laptop':'' || isMobile ? 'mobile':''} />
+      <Form type={isDesktop ? 'desktop' : '' || isLaptop ? 'laptop':'' || isMobile ? 'mobile':''} />
     </>
   );
 }

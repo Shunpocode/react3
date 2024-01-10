@@ -17,11 +17,10 @@ export default function Form({ type }) {
   function FormSent() {
     var fileField = document.querySelector('input[type="file"]').files[0];
     var formData = new FormData();
-    var cleanedPhoneValue = document.getElementById('phone').value.replace(/[\s\(\)\-]/g, '');
     formData.append('position_id', position_id);
     formData.append('name', document.getElementById('name').value);
     formData.append('email', document.getElementById('email').value);
-    formData.append('phone', cleanedPhoneValue);
+    formData.append('phone', document.getElementById('phone').value);
     formData.append('photo', fileField);
     fetch('https://frontend-test-assignment-api.abz.agency/api/v1/users', { method: 'POST', body: formData, headers: { 'Token': API_TOKEN, }, })
       .then(function(response) { return response.json(); })
@@ -29,8 +28,8 @@ export default function Form({ type }) {
         if(data.success) {
           setSentForm(true);
           clearInterval(intervalId)
-        } else { console.log('proccess server errors'); } })
-      .catch(function(error) { console.log('proccess network errors'); });
+        } else { console.log(data); } })
+      .catch(function(error) { console.log(error); });
 
   }
 
@@ -41,21 +40,26 @@ export default function Form({ type }) {
   function currentForm() {
     if (sentForm === false) {
       const form = document.querySelector('form');
+      const error = [window.getComputedStyle(document.getElementsByTagName('fieldset')[0].getElementsByTagName('legend')[0]).color, window.getComputedStyle(document.getElementsByTagName('fieldset')[1].getElementsByTagName('legend')[0]).color, window.getComputedStyle(document.getElementsByTagName('fieldset')[2].getElementsByTagName('legend')[0]).color]
       const requiredInputs = form.querySelectorAll('input[required]');
-      let isFormValid = true;
+      let isFormValid = false;
 
       requiredInputs.forEach((input) => {
-        if (input.type === 'file') {
-          if (!input.files || input.files.length === 0) {
-            isFormValid = false;
+        if (error[0] !== 'rgb(203, 61, 64)' ) {
+          if(error[1] !== 'rgb(203, 61, 64)'){
+            if (error[2] !== 'rgb(203, 61, 64)') {
+              if (input.type === 'file') {
+                if (!input.files || input.files.length !== 0) {
+                  isFormValid = true;
+                }
+              }
+            }
           }
-        } else {
-          if (input.value.trim() === '') {
-            isFormValid = false;
-          }
+        }else{
+          isFormValid = false
         }
       });
-
+      console.log(isFormValid);
       setFormOK(isFormValid);
     }
   }
