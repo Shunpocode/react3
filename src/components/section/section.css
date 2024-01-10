@@ -12,6 +12,8 @@ section{
     color: white;
     gap: 32px;
     margin-bottom: 140px;
+    position: sticky;
+    overflow-x: hidden;
 
 }
 section div{
@@ -19,12 +21,9 @@ section div{
     display: flex;
     flex-direction: column;
     gap:21px;
+    position: relative;
+    z-index: 1;
 }
 
 section div > h1{width: 380px; max-width: 100%;}
 section div > p{width: 380px; max-width: 100%;}
-.bg{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("bg.webp");
-}

@@ -59,7 +59,6 @@ export default function Form({ type }) {
           isFormValid = false
         }
       });
-      console.log(isFormValid);
       setFormOK(isFormValid);
     }
   }

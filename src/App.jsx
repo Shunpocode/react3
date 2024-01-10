@@ -2,8 +2,9 @@ import {lazy, useEffect, useState} from 'react';
 import './App.css';
 import Header from "./components/header/header";
 import Section from './components/section/section';
-const Cards = lazy(() => import('./components/section/cards/cards'));
-const Form = lazy(() => import('./components/form/form'));
+import Cards from './components/section/cards/cards';
+// import Form from './components/form/form';
+const Form = lazy(() => import ("./components/form/form"))
 
 export default function App() {
   const [isDesktop, setDesktop] = useState(false);
